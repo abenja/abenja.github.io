@@ -12,21 +12,28 @@ body {
 }
 
 .jumbotron {
-    background-image: url(https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1328&q=80);
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80);
+    background-position-y: bottom;
+    background-size: cover;
     color: white;
-    
+    text-align: center;
 }
 
-.jumbotron .button {
-    transition: color 3s
+.container .row .col-md-12 {
+    text-align: center;
 }
 
-.footer {
+.container .row .col-md-2 {
+    text-align: center;
+}
+
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
-    text-align: center;
-
+    padding-right: 10px;
+    padding-top: 10px;
 }
+
