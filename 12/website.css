@@ -1,39 +1,73 @@
 body {
-    background-color: rgb(218, 218, 218);
+    background-color: #FDF9F0;
     padding-bottom: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-link {
-    color: #FFFAAA;
+    color: #FFDB00;
+    transition: color 0.5s;
+    transition: text-shadow 0.5s;
 }
 
 .nav-link:hover {
     color: white;
+    text-shadow: 4px 10px rgba(255, 221, 0, 0.384);
 }
 
 .jumbotron {
-    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80);
+    background-image: url(https://images.unsplash.com/photo-1597092430872-09a3f4338c60?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80);
     background-position-y: bottom;
     background-size: cover;
     color: white;
     text-align: center;
 }
 
+.jumbotron h1 {
+    text-shadow: 2px 2px rgba(255, 221, 0, 0.568);
+    transition: text-shadow 0.8s;
+}
+
 .container .row .col-md-12 {
     text-align: center;
+    color: #1B3D2F;
 }
 
 .container .row .col-md-2 {
     text-align: center;
 }
 
+.container .row .col-md-12 #intro {
+    text-shadow: 1px 1px #9E9065;
+}
+
 footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    height: 25px;
     width: 100%;
     color: white;
     padding-right: 10px;
-    padding-top: 10px;
 }
 
+.footer .pull-right .list-inline .list-inline-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fa {
+    color: white;
+}
+
+.btn-submit {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border-color: #000000;
+    transition: background-color 0.5s;
+}
+
+
+.btn-submit:hover {
+    background-color: #FFDB00;
+}
