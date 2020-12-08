@@ -1,7 +1,12 @@
 body {
-    background-color: #FDF9F0;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 75%);
     padding-bottom: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-fluid {
+    padding: 0px;
 }
 
 .nav-link {
@@ -11,7 +16,7 @@ body {
 }
 
 .nav-link:hover {
-    color: white;
+    color: rgb(201, 201, 201);
     text-shadow: 4px 10px rgba(255, 221, 0, 0.384);
 }
 
@@ -21,12 +26,31 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
+    border-radius: 0px;
 }
 
 .jumbotron h1 {
-    text-shadow: 2px 2px rgba(255, 221, 0, 0.568);
+    text-shadow: 2px 3px rgba(255, 221, 0, 0.664);
     transition: text-shadow 0.8s;
+    transition-delay: 0.1s;
+
 }
+
+.jumbotron p {
+    color: #000000;
+    text-shadow:
+                  -3px -0 25px black,
+                  3px 0px 3px rgb(187, 187, 187),
+                  0px 0px 15px black,
+                  0 0 40px black;
+}
+
+.jumbotron p {
+    transition: color 2s;
+    transition-delay: 1s;
+    color: #FFFFFF;
+}
+
 
 .container .row .col-md-12 {
     text-align: center;
@@ -37,8 +61,14 @@ body {
     text-align: center;
 }
 
-.container .row .col-md-12 #intro {
-    text-shadow: 1px 1px #9E9065;
+.container .row .col-md-12 #intro h5 {
+    text-shadow: 1px 1px #FF8100;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+figure {
+    padding-top: 15px;
 }
 
 footer {
@@ -60,14 +90,31 @@ footer {
     color: white;
 }
 
+.fa:hover {
+    color: #FF8100;
+}
+
 .btn-submit {
     border-radius: 3px;
-    background-color: #FFFFFF;
+    background-color: #FFDB00;
     border-color: #000000;
     transition: background-color 0.5s;
 }
 
 
 .btn-submit:hover {
-    background-color: #FFDB00;
+    background-color: #FF8100;
+}
+
+.btn-new, .btn-new a {
+    background-color: #000000;
+    color: rgba(255, 221, 0, 0.829);
+    transition: color 1s;
+    transition: background-color 0s;
+}
+
+
+.btn-new a:hover {
+    color: #FF8100;
+    transition-duration: 1s;
 }
