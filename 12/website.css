@@ -23,7 +23,6 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 
 .jumbotron {
     background-image: url(https://images.unsplash.com/photo-1597092430872-09a3f4338c60?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80);
     background-position-y: bottom;
-    background-size: cover;
     color: white;
     text-align: center;
     border-radius: 0px;
@@ -52,16 +51,16 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 
 }
 
 
-.container .row .col-md-12 {
+.container .row .col-sm-12 {
     text-align: center;
     color: #1B3D2F;
 }
 
-.container .row .col-md-2 {
+.container .row .col-sm-2 {
     text-align: center;
 }
 
-.container .row .col-md-12 #intro h5 {
+.container .row .col-sm-12 #intro h5 {
     text-shadow: 1px 1px #FF8100;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -81,9 +80,13 @@ footer {
     padding-right: 10px;
 }
 
+.footer .pull-left {
+    font-size: 10px;
+}
+
 .footer .pull-right .list-inline .list-inline-item {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .fa {
@@ -92,6 +95,7 @@ footer {
 
 .fa:hover {
     color: #FF8100;
+    text-decoration: none;
 }
 
 .btn-submit {
