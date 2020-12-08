@@ -1,6 +1,6 @@
 body {
     background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 75%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 75%);
     padding-bottom: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -50,20 +50,28 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 
     color: #FFFFFF;
 }
 
+.jumbotron a {
+    border-color: #00000018;
+    color: rgba(255, 221, 0, 0.829);
+    transition: color 0s;
+}
 
-.container .row .col-sm-12 {
+.jumbotron a:hover {
+    color: #FF8100;
+    transition-duration: 0.5s;
+}
+
+.container .row .col-md-12 {
     text-align: center;
     color: #1B3D2F;
 }
 
-.container .row .col-sm-2 {
+.container .row .col-md-2 {
     text-align: center;
 }
 
-.container .row .col-sm-12 #intro h5 {
-    text-shadow: 1px 1px #FF8100;
-    margin-top: 20px;
-    margin-bottom: 50px;
+.container .row .col-md-12 #values h5 {
+    font-weight: bold;
 }
 
 figure {
@@ -105,20 +113,6 @@ footer {
     transition: background-color 0.5s;
 }
 
-
 .btn-submit:hover {
     background-color: #FF8100;
-}
-
-.btn-new, .btn-new a {
-    background-color: #000000;
-    color: rgba(255, 221, 0, 0.829);
-    transition: color 1s;
-    transition: background-color 0s;
-}
-
-
-.btn-new a:hover {
-    color: #FF8100;
-    transition-duration: 1s;
 }
