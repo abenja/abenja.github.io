@@ -1,23 +1,27 @@
+/*body*/
+
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(193,193,193,1) 75%);
+    background-color: rgb(243, 243, 243);
     padding-bottom: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container-fluid {
-    padding: 0px;
-}
+/*nav pane*/
 
 .nav-link {
     color: #FFDB00;
-    transition: color 0.5s;
-    transition: text-shadow 0.5s;
+    transition: text-shadow 0.3s;
 }
 
 .nav-link:hover {
     color: rgb(201, 201, 201);
     text-shadow: 4px 10px rgba(255, 221, 0, 0.384);
+}
+
+/*jumbotron*/
+
+.container-fluid {
+    padding: 0px;
 }
 
 .jumbotron {
@@ -32,7 +36,6 @@ body {
     text-shadow: 2px 3px rgba(255, 221, 0, 0.664);
     transition: text-shadow 0.8s;
     transition-delay: 0.1s;
-
 }
 
 .jumbotron p {
@@ -51,32 +54,80 @@ body {
 }
 
 .jumbotron a {
-    border-color: #00000018;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #c4b7b7f5;
+    padding: 5px;
     color: rgba(255, 221, 0, 0.829);
     transition: color 0s;
 }
 
 .jumbotron a:hover {
     color: #FF8100;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
-.container .row .col-md-12 {
+/*index*/
+.col-lg-12 h5 {
     text-align: center;
-    color: #1B3D2F;
-}
-
-.container .row .col-md-2 {
-    text-align: center;
-}
-
-.container .row .col-md-12 #values h5 {
     font-weight: bold;
+}
+
+.col-lg-2 {
+    text-align: center;
 }
 
 figure {
     padding-top: 15px;
 }
+
+/*services page */
+
+.col-lg-8 #service {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*resource page*/
+
+.col-lg-8 #resources {
+    list-style-type: none;
+    text-align: center;    
+    padding: 0;
+}
+
+.col-lg-8 #resource-info {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#resources a {
+    color: #000000;
+    transition: font-size 0.1s;
+}
+
+#resources a:hover {
+    color: #FF8100;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*contact page*/
+
+.btn-submit {
+    border-radius: 3px;
+    background-color: #FFDB00;
+    border-color: #000000;
+    transition: background-color 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: #FF8100;
+}
+
+/*footer*/
 
 footer {
     position: fixed;
@@ -104,15 +155,4 @@ footer {
 .fa:hover {
     color: #FF8100;
     text-decoration: none;
-}
-
-.btn-submit {
-    border-radius: 3px;
-    background-color: #FFDB00;
-    border-color: #000000;
-    transition: background-color 0.5s;
-}
-
-.btn-submit:hover {
-    background-color: #FF8100;
 }
