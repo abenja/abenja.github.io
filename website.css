@@ -1,7 +1,7 @@
 /*body*/
 
 body {
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(247, 247, 247);
     padding-bottom: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -33,9 +33,9 @@ body {
 }
 
 .jumbotron h1 {
-    text-shadow: 2px 3px rgba(255, 221, 0, 0.664);
-    transition: text-shadow 0.8s;
-    transition-delay: 0.1s;
+    text-shadow: 2px 3px rgba(255, 221, 0, 0.568);
+    transition: text-shadow 0.6s;
+    transition-delay: 0.6s;
 }
 
 .jumbotron p {
@@ -48,8 +48,8 @@ body {
 }
 
 .jumbotron p {
-    transition: color 2s;
-    transition-delay: 1s;
+    transition: color 1.5s;
+    transition-delay: 1.2s;
     color: #FFFFFF;
 }
 
@@ -59,8 +59,8 @@ body {
     border-radius: 10px;
     border-color: #c4b7b7f5;
     padding: 5px;
-    color: rgba(255, 221, 0, 0.829);
-    transition: color 0s;
+    color: rgba(255, 221, 0, 0.932);
+    transition: color 0.2s;
 }
 
 .jumbotron a:hover {
@@ -84,12 +84,17 @@ figure {
 
 /*services page */
 
-.col-lg-8 #service {
+.col-lg-8 .service {
     padding-left: 15px;
     padding-right: 15px;
 }
 
 /*resource page*/
+
+.col-lg-8 h5 {
+    padding-top: 20px;
+
+}
 
 .col-lg-8 #resources {
     list-style-type: none;
@@ -97,7 +102,7 @@ figure {
     padding: 0;
 }
 
-.col-lg-8 #resource-info {
+.col-lg-8 .resource-info {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -111,7 +116,7 @@ figure {
     color: #FF8100;
     font-size: 1.1em;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration-style: solid;
 }
 
 /*contact page*/
@@ -120,11 +125,12 @@ figure {
     border-radius: 3px;
     background-color: #FFDB00;
     border-color: #000000;
-    transition: background-color 0.5s;
+    transition: background-color 0.2s;
 }
 
 .btn-submit:hover {
     background-color: #FF8100;
+    transition: 0.3s;
 }
 
 /*footer*/
@@ -155,4 +161,14 @@ footer {
 .fa:hover {
     color: #FF8100;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .jumbotron p {
+        transition: color 1.5s;
+        transition-delay: 1.2s;
+        color: #FFFFFF;
+    }
+    
 }
