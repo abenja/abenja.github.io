@@ -115,6 +115,7 @@ figure {
 #resources a {
     color: #000000;
     transition: font-size 0.1s;
+    text-decoration: underline;
 }
 
 #resources a:hover {
